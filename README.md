@@ -28,7 +28,7 @@ model import
 
     from model import *
   
-1. Parameter
+### 1. Parameter
 
         Model( <Learning rate> , <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> ) <Scaled> , <Scale Info> )
  
@@ -44,9 +44,9 @@ model import
 
     Scale Info : Scale시 사용한 mean, std 값
 
-2. train
+### 2. train
 
-   + Without Scaling
+  #### + Without Scaling
    
         train.py 163'th line
     
@@ -55,7 +55,7 @@ model import
         Batch 단위로 scaling 수행
     
     
-   + With Scaling
+  #### + With Scaling
    
         train.py 114~117 line (standard scaling)
     
