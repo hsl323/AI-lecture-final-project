@@ -22,8 +22,8 @@ Link: [Activity Recognition system based on Multisensor data fusion (AReM) Data 
 
 [datasetlink]: https://archive.ics.uci.edu/ml/datasets/Activity+Recognition+system+based+on+Multisensor+data+fusion+(AReM)
 
-Model Use
-----------
+Model
+------
 model import
 
     from model import *
@@ -35,3 +35,11 @@ Parameter
 Number of Layer : Network의 Hidden Layer 수
 
 Hidden_size : Hidden Layer의 노드수 (Python list 형태)
+
+Activation : Activation function (default : Sigmoid)
+
+Dropout rate : Dropout rate
+
+Scaled : Scaling 유무 (type : Boolean ,default : False)
+
+Scale Info : Scale시 사용한 mean, std 값
