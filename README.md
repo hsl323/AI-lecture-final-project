@@ -7,9 +7,9 @@ Arem data를 이용해 적절한 activation, optimizer등 여러 방법을 적�
 구현 환경
 --------
 
-+python3 
+python3 
 
-+windows 10
+windows 10
 
 Data
 ----
