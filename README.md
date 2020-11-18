@@ -18,6 +18,8 @@ AReM data
 
 ![arem](https://user-images.githubusercontent.com/60774392/99532090-1adff080-29e7-11eb-844a-6ed63dfce874.PNG)
 
+여섯가지 동작을 수행했을 때의 센서값의 평균과 분산을 나타낸다.
+
 Link: [Activity Recognition system based on Multisensor data fusion (AReM) Data Set][datasetlink]
 
 [datasetlink]: https://archive.ics.uci.edu/ml/datasets/Activity+Recognition+system+based+on+Multisensor+data+fusion+(AReM)
