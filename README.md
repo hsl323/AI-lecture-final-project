@@ -28,9 +28,9 @@ model import
 
     from model import *
   
-Parameter
+1.Parameter
 
-    Model( <Learning rate> , <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> , <Scaled> , <Scale Info> )
+    Model( <Learning rate> , <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> ) <Scaled> , <Scale Info> )
  
 Number of Layer : Network의 Hidden Layer 수
 
@@ -43,6 +43,26 @@ Dropout rate : Dropout rate
 Scaled : Scaling 유무 (type : Boolean ,default : False)
 
 Scale Info : Scale시 사용한 mean, std 값
+
+2.train
+   Without Scaling
+    
+   in train 163'th line
+    
+        net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> )
+    
+   With Scaling
+    
+   in train 114~117 line (standard scaling)
+    
+        data_mean = x_train.mean(axis=0) 
+        data_std = x_train.std(axis=0)
+        x_train = (x_train-data_mean)/(data_std)
+        x_test = (x_test-data_mean)/(data_std)
+        
+   in train 163'th line
+    
+        net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> , scaled = True, scaler_info = [data_mean,data_std] )
 
 Final
 ------
