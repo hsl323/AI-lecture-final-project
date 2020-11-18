@@ -18,6 +18,8 @@ Data
 
 AReM data
 
+![arem](https://user-images.githubusercontent.com/60774392/99532090-1adff080-29e7-11eb-844a-6ed63dfce874.PNG)
+
 Link: [AReM][datasetlink]
 
 [datasetlink]: https://archive.ics.uci.edu/ml/datasets/Activity+Recognition+system+based+on+Multisensor+data+fusion+(AReM)
