@@ -43,6 +43,7 @@ model import
     Scaled : Scaling 유무 (type : Boolean ,default : False)
 
     Scale Info : Scale시 사용한 mean, std 값
+    
 
 2. train
 
