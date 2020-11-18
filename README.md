@@ -1,9 +1,5 @@
 # AI-lecture-final-project
-인공지능 강의 final project
-
-개요
-----
-
+---------------------------
 
 Deep learning framewark를 이용하는 것이 아닌 Python numpy 모듈을 이용하여 모델을 구현
 
@@ -24,3 +20,4 @@ AReM data
 Link: [AReM][datasetlink]
 
 [datasetlink]: https://archive.ics.uci.edu/ml/datasets/Activity+Recognition+system+based+on+Multisensor+data+fusion+(AReM)
+
