@@ -1,5 +1,4 @@
 # AI-lecture-final-project
----------------------------
 
 Deep learning framewark를 이용하는 것이 아닌 Python numpy 모듈을 이용하여 모델을 구현
 
