@@ -24,8 +24,13 @@ Link: [Activity Recognition system based on Multisensor data fusion (AReM) Data 
 
 Model Use
 ----------
+model import
 
   from model import *
   
-  net = Model( <Learning rate> , <Number of Layer> , <Hidden_size> , <Activation> , <Dropout rate> , <Scaled> , <Scale Info> )
+Parameter
+
+  net = Model( <Learning rate> , <Hidden Number of Layer> , <Hidden_size> , <Activation> , <Dropout rate> , <Scaled> , <Scale Info> )
  
+Number of Layer : Network의 Hidden Layer 수
+Hidden_size : Hidden Layer의 노드수 (Python list 형태)
