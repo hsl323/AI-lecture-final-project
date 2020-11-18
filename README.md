@@ -4,12 +4,11 @@ Deep learning framewark를 이용하는 것이 아닌 Python numpy 모듈을 이
 
 Arem data를 이용해 적절한 activation, optimizer등 여러 방법을 적용시켜 정확도를 높이는 프로젝트.
 
-구현 환경
+Environments
 --------
 
-python3 
+Numpy 1.18.2
 
-windows 10
 
 Data
 ----
