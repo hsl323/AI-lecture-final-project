@@ -53,6 +53,7 @@ model import
             
         Batch 단위로 scaling 수행
     
+    
    + With Scaling
         train.py 114~117 line (standard scaling)
     
@@ -64,6 +65,9 @@ model import
         train.py 163'th line
     
             net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> , scaled = True, scaler_info = [data_mean,data_std] )
+         
+        전체 data를 scaling 후 사용한 mean, std 를 이용하여 test data에 동일하게 적용
+
 
 Final
 ------
