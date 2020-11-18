@@ -43,3 +43,8 @@ Dropout rate : Dropout rate
 Scaled : Scaling 유무 (type : Boolean ,default : False)
 
 Scale Info : Scale시 사용한 mean, std 값
+
+Final
+------
+
+인공지능 과제 리포트.pdf
