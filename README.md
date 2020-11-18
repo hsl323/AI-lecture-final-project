@@ -20,6 +20,14 @@ AReM data
 
 여섯가지 동작을 수행했을 때의 센서값의 평균과 분산을 나타낸다.
 
+class별 갯수
+    + walking  : 4291
+    + standing : 4301
+    + sitting  : 4311
+    + lying    : 4342
+    + cycling  : 4408
+    + bending  : 3402
+
 Link: [Activity Recognition system based on Multisensor data fusion (AReM) Data Set][datasetlink]
 
 [datasetlink]: https://archive.ics.uci.edu/ml/datasets/Activity+Recognition+system+based+on+Multisensor+data+fusion+(AReM)
