@@ -22,3 +22,10 @@ Link: [Activity Recognition system based on Multisensor data fusion (AReM) Data 
 
 [datasetlink]: https://archive.ics.uci.edu/ml/datasets/Activity+Recognition+system+based+on+Multisensor+data+fusion+(AReM)
 
+Model Use
+----------
+
+  from model import *
+  
+  net = Model( <Learning rate> , <Number of Layer> , <Hidden_size> , <Activation> , <Dropout rate> , <Scaled> , <Scale Info> )
+ 
