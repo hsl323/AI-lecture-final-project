@@ -32,26 +32,27 @@ model import
 
         Model( <Learning rate> , <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> ) <Scaled> , <Scale Info> )
  
-Number of Layer : Network의 Hidden Layer 수
+    Number of Layer : Network의 Hidden Layer 수
 
-Hidden_size : Hidden Layer의 노드수 (Python list 형태)
+    Hidden_size : Hidden Layer의 노드수 (Python list 형태)
 
-Activation : Activation function (default : Sigmoid)
+    Activation : Activation function (default : Sigmoid)
 
-Dropout rate : Dropout rate
+    Dropout rate : Dropout rate
 
-Scaled : Scaling 유무 (type : Boolean ,default : False)
+    Scaled : Scaling 유무 (type : Boolean ,default : False)
 
-Scale Info : Scale시 사용한 mean, std 값
+    Scale Info : Scale시 사용한 mean, std 값
 
-2.train
-   Without Scaling
+2. train
+
+   >Without Scaling
     
    in train 163'th line
     
         net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> )
     
-   With Scaling
+   >With Scaling
     
    in train 114~117 line (standard scaling)
     
