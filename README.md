@@ -28,23 +28,23 @@ model import
 
     from model import *
   
-### 1. Parameter
+1. Parameter
 
         Model( <Learning rate> , <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> ) <Scaled> , <Scale Info> )
- 
-   Number of Layer : Network의 Hidden Layer 수
 
-   Hidden_size : Hidden Layer의 노드수 (Python list 형태)
+    Number of Layer : Network의 Hidden Layer 수
 
-   Activation : Activation function (default : Sigmoid)
+    Hidden_size : Hidden Layer의 노드수 (Python list 형태)
 
-   Dropout rate : Dropout rate
+    Activation : Activation function (default : Sigmoid)
 
-   Scaled : Scaling 유무 (type : Boolean ,default : False)
+    Dropout rate : Dropout rate
 
-   Scale Info : Scale시 사용한 mean, std 값
+    Scaled : Scaling 유무 (type : Boolean ,default : False)
 
-### 2. train
+    Scale Info : Scale시 사용한 mean, std 값
+
+2. train
 
    + Without Scaling
         train.py 163'th line
