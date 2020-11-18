@@ -30,7 +30,8 @@ model import
   
 Parameter
 
-    net = Model( <Learning rate> , <Hidden Number of Layer> , <Hidden_size> , <Activation> , <Dropout rate> , <Scaled> , <Scale Info> )
+    Model( <Learning rate> , <Hidden Number of Layer> , <Hidden_size> , <Activation> , <Dropout rate> , <Scaled> , <Scale Info> )
  
 Number of Layer : Network의 Hidden Layer 수
+
 Hidden_size : Hidden Layer의 노드수 (Python list 형태)
