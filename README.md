@@ -47,4 +47,6 @@ Scale Info : Scale시 사용한 mean, std 값
 Final
 ------
 
-인공지능 과제 리포트.pdf
+[인공지능 과제 리포트.pdf][link]
+
+[link]: https://github.com/hsl323/AI-lecture-final-project/blob/main/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EA%B3%BC%EC%A0%9C%20%EB%A6%AC%ED%8F%AC%ED%8A%B8.pdf
