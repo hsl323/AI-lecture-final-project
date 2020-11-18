@@ -77,12 +77,11 @@ model import
 
     + With Scaling
     
-       train.py 114~117 line (standard scaling)
+       train.py 114~116 line (standard scaling)
     
             data_mean = x_train.mean(axis=0) 
             data_std = x_train.std(axis=0)
             x_train = (x_train-data_mean)/(data_std)
-            x_test = (x_test-data_mean)/(data_std)
             
        train.py 163'th line
     
