@@ -32,22 +32,21 @@ model import
 
         Model( <Learning rate> , <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> ) <Scaled> , <Scale Info> )
  
-    Number of Layer : Network의 Hidden Layer 수
+   Number of Layer : Network의 Hidden Layer 수
 
-    Hidden_size : Hidden Layer의 노드수 (Python list 형태)
+   Hidden_size : Hidden Layer의 노드수 (Python list 형태)
 
-    Activation : Activation function (default : Sigmoid)
+   Activation : Activation function (default : Sigmoid)
 
-    Dropout rate : Dropout rate
+   Dropout rate : Dropout rate
 
-    Scaled : Scaling 유무 (type : Boolean ,default : False)
+   Scaled : Scaling 유무 (type : Boolean ,default : False)
 
-    Scale Info : Scale시 사용한 mean, std 값
+   Scale Info : Scale시 사용한 mean, std 값
 
 ### 2. train
 
-  #### + Without Scaling
-   
+   + Without Scaling
         train.py 163'th line
     
             net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> )
@@ -55,20 +54,19 @@ model import
         Batch 단위로 scaling 수행
     
     
-  #### + With Scaling
-   
-        train.py 114~117 line (standard scaling)
+  + With Scaling
+       train.py 114~117 line (standard scaling)
     
             data_mean = x_train.mean(axis=0) 
             data_std = x_train.std(axis=0)
             x_train = (x_train-data_mean)/(data_std)
             x_test = (x_test-data_mean)/(data_std)
-        
-        train.py 163'th line
+            
+       train.py 163'th line
     
             net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> , scaled = True, scaler_info = [data_mean,data_std] )
          
-        전체 data를 scaling 후 사용한 mean, std 를 이용하여 test data에 동일하게 적용
+       전체 data를 scaling 후 사용한 mean, std 를 이용하여 test data에 동일하게 적용
 
 
 Final
