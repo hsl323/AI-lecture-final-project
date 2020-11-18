@@ -48,16 +48,15 @@ model import
 
 2. train
 
-   + Without Scaling
+    + Without Scaling
         train.py 163'th line
     
             net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> )
             
         Batch 단위로 scaling 수행
     
-    
-    
-  + With Scaling
+
+    + With Scaling
        train.py 114~117 line (standard scaling)
     
             data_mean = x_train.mean(axis=0) 
