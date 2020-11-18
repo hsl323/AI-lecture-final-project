@@ -46,24 +46,24 @@ model import
 
 2. train
 
-   Without Scaling
+   + Without Scaling
+        train.py 163'th line
     
-    in train 163'th line
+            net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> )
+            
+        Batch 단위로 scaling 수행
     
-        net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> )
+   + With Scaling
+        train.py 114~117 line (standard scaling)
     
-   With Scaling
-    
-    in train 114~117 line (standard scaling)
-    
-        data_mean = x_train.mean(axis=0) 
-        data_std = x_train.std(axis=0)
-        x_train = (x_train-data_mean)/(data_std)
-        x_test = (x_test-data_mean)/(data_std)
+            data_mean = x_train.mean(axis=0) 
+            data_std = x_train.std(axis=0)
+            x_train = (x_train-data_mean)/(data_std)
+            x_test = (x_test-data_mean)/(data_std)
         
-    in train 163'th line
+        train.py 163'th line
     
-        net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> , scaled = True, scaler_info = [data_mean,data_std] )
+            net = Model(lr, <Number of Hidden Layer> , <Hidden_size> , <Activation> , <Dropout rate> , scaled = True, scaler_info = [data_mean,data_std] )
 
 Final
 ------
